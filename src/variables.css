@@ -1,0 +1,102 @@
+/* ========================================
+   DESIGN SYSTEM VARIABLES
+   ======================================== */
+
+:root {
+    /* ========================================
+       SPACING SYSTEM
+       ======================================== */
+    
+    /* Base spacing unit */
+    --spacing-unit: 0.25rem;  /* 4px at default 16px font size */
+    
+    /* Spacing scale */
+    --space-1: calc(var(--spacing-unit) * 1);    /* 0.25rem = 4px */
+    --space-2: calc(var(--spacing-unit) * 2);    /* 0.5rem = 8px */
+    --space-3: calc(var(--spacing-unit) * 3);    /* 0.75rem = 12px */
+    --space-4: calc(var(--spacing-unit) * 4);    /* 1rem = 16px */
+    --space-5: calc(var(--spacing-unit) * 5);    /* 1.25rem = 20px */
+    --space-6: calc(var(--spacing-unit) * 6);    /* 1.5rem = 24px */
+    --space-7: calc(var(--spacing-unit) * 7);    /* 1.75rem = 28px */
+    --space-8: calc(var(--spacing-unit) * 8);    /* 2rem = 32px */
+    --space-10: calc(var(--spacing-unit) * 10);  /* 2.5rem = 40px */
+    --space-12: calc(var(--spacing-unit) * 12);  /* 3rem = 48px */
+    --space-16: calc(var(--spacing-unit) * 16);  /* 4rem = 64px */
+    --space-35: calc(var(--spacing-unit) * 35);  /* 8.75rem = 140px */
+    
+    /* Semantic spacing names */
+    --spacing-xs: var(--space-1);     /* 0.25rem - tight spacing */
+    --spacing-sm: var(--space-2);     /* 0.5rem - small spacing */
+    --spacing-md: var(--space-4);     /* 1rem - medium spacing */
+    --spacing-lg: var(--space-6);     /* 1.5rem - large spacing */
+    --spacing-xl: var(--space-8);     /* 2rem - extra large spacing */
+    --spacing-xxl: var(--space-10);   /* 2.5rem - section spacing */
+    --spacing-xxxl: var(--space-16);  /* 4rem - major section spacing */
+    
+    /* Border radius scale */
+    --radius-sm: var(--space-1);      /* 0.25rem - small radius */
+    --radius-md: var(--space-7);      /* 1.75rem - medium radius */
+    --radius-full: 12.5rem;           /* Full radius for pills/buttons */
+    
+    /* Component-specific spacing */
+    --container-padding: var(--spacing-lg);        /* 1.5rem */
+    --section-gap: var(--spacing-xl);              /* 2rem */
+    --content-gap: var(--spacing-md);              /* 1rem */
+    --text-gap: var(--spacing-xs);                 /* 0.25rem */
+    --tag-padding: 0 var(--spacing-xs);            /* 0 0.25rem */
+    --button-padding: var(--spacing-xs) var(--spacing-md); /* 0.25rem 1rem */
+
+    /* ========================================
+       COLOR SYSTEM
+       ======================================== */
+    
+    --primary-colour: #0064FF;
+    --secondary-colour: #A4B0C2;
+    --on-surface: #141414;
+    --on-surface-variant: #646464;
+    --surface-container: #E4ECF7;
+    --negative-surface-container: #141414;
+    --on-negatve-surface-container: #E4ECF7;
+
+    /* ========================================
+       TYPOGRAPHY SYSTEM
+       ======================================== */
+    
+    --primary-font-family: "new-spirit", sans-serif;
+    --secondary-font-family: "Albert sans", sans-serif;
+    
+    /* Font sizes */
+    --text-xs: 0.75rem;    /* 12px */
+    --text-sm: 0.875rem;   /* 14px */
+    --text-base: 1rem;     /* 16px */
+    --text-lg: 1.125rem;   /* 18px */
+    --text-xl: 1.25rem;    /* 20px */
+    --text-2xl: 1.5rem;    /* 24px */
+    --text-3xl: 3rem;      /* 48px */
+}
+
+/* ========================================
+   RESPONSIVE BREAKPOINTS
+   ======================================== */
+
+/* Tablet: 991px and down */
+@media (max-width: 991px) {
+    :root {
+        --container-padding: var(--spacing-md);  /* Reduce padding */
+        --section-gap: var(--spacing-lg);        /* Reduce section gaps */
+        --spacing-xxxl: var(--spacing-xl);       /* Reduce large spacing */
+        --text-3xl: 2.5rem;                      /* Smaller hero text */
+    }
+}
+
+/* Mobile: 479px and down */
+@media (max-width: 479px) {
+    :root {
+        --container-padding: var(--spacing-sm);  /* Even smaller padding */
+        --section-gap: var(--spacing-md);        /* Even smaller gaps */
+        --content-gap: var(--spacing-sm);        /* Reduce content gaps */
+        --text-3xl: 2rem;                        /* Even smaller hero text */
+        --text-xl: 1.125rem;                     /* Scale down body text */
+        --text-2xl: 1.25rem;                     /* Scale down section titles */
+    }
+}
