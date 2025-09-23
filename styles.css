@@ -1,0 +1,557 @@
+ * {
+     box-sizing: border-box;
+ }
+
+ :root {
+     /* colours */
+     --primary-colour: #0064FF;
+     --secondary-colour: #A4B0C2;
+     --on-surface: #141414;
+     --on-surface-variant: #646464;
+
+     --surface-container: #E4ECF7;
+     --negative-surface-container: #141414;
+     --on-negatve-surface-container: #E4ECF7;
+
+
+     /* typography */
+     --primary-font-family: "new-spirit", sans-serif;
+     --secondary-font-family: "Albert sans", sans-serif;
+ }
+
+ body {
+     margin: 0;
+     padding: 0;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ p {
+     margin: 0;
+     font-family: "Albert sans", sans-serif;
+ }
+
+ h3 {
+     font-weight: 400;
+     margin: 0;
+ }
+
+ h4 {
+     font-weight: 400;
+     font-size: 24px;
+     line-height: 125%;
+     font-family: "Albert sans", sans-serif;
+ }
+
+ h5 {
+     font-weight: 400;
+     margin: 0;
+ }
+
+ button {
+     margin: 0;
+     border: none;
+ }
+
+ /* New header css */
+
+ .page-wrapper {
+     max-width: 1440px;
+     margin: 0 auto;
+     gap: 32px
+ }
+
+ .hero-image-container {
+     width: 100%;
+ }
+
+ .hero-image {
+     width: 100%;
+     height: auto;
+     margin: 0;
+     display: block;
+ }
+
+ .hero-text-container {
+     display: flex;
+     padding: 24px;
+     gap: 24px;
+     margin: 0 auto;
+ }
+
+ .hero-headline {
+     flex: 2;
+     font-family: "new-spirit", sans-serif;
+     font-size: 48px;
+ }
+
+ .highlight {
+     color: var(--primary-colour);
+ }
+
+ .paragraph-container {
+     display: flex;
+     flex: 1;
+     flex-direction: column;
+     font-family: "Albert sans", sans-serif;
+     gap: 12px;
+ }
+
+ .hero-paragraph {
+     font-size: 20px;
+     line-height: 140%;
+     color: var(--on-surface)
+ }
+
+ .hero-description {
+     font-size: 12px;
+     line-height: 140%;
+     color: var(--on-surface-variant)
+ }
+
+ .discipline-tag {
+     background-color: var(--surface-container);
+     border-radius: 4px;
+     padding: 0 4px;
+     white-space: nowrap;
+ }
+
+ .section-container {
+     display: flex;
+     padding: 24px;
+     gap: 24px;
+     margin: 0 auto;
+ }
+
+ .section-title {
+     flex: 2;
+ }
+
+ /* Project block CSS */
+
+ .project-wrapper {
+     display: flex;
+     max-width: 1440px;
+     margin: 0 auto;
+     gap: 32px
+ }
+
+ .project-title-sticky {
+     display: flex;
+     flex: 1;
+     flex-direction: column;
+     padding: 40px 0 32px 0;
+     font-family: var(--primary-font-family);
+     font-size: 40px;
+     line-height: 90%;
+     gap: 12px;
+     position: sticky;
+     top: 0;
+     align-self: flex-start;
+     height: fit-content;
+ }
+
+ .secondary-highlight {
+     color: var(--secondary-colour);
+ }
+
+ .see-more-button {
+     font-family: var(--secondary-font-family);
+     font-size: 18px;
+     line-height: 140%;
+     padding: 4px 16px;
+     border-radius: 200px;
+     background-color: var(--negative-surface-container);
+     color: var(--on-negatve-surface-container);
+     width: fit-content;
+ }
+
+ .project-content {
+     display: flex;
+     flex-direction: column;
+     flex: 3;
+     padding: 40px 64px;
+     gap: 16px;
+ }
+
+ .project-description {
+     display: flex;
+     gap: 16px;
+     padding-bottom: 16px;
+ }
+
+ .description-paragraph {
+     display: flex;
+     flex: 1;
+     color: var(--on-surface)
+ }
+
+ /* Page structure styles */
+ .page-title-container {
+     display: block;
+     gap: 4px;
+     font-family: "new-spirit", sans-serif;
+     font-size: 48px;
+     align-items: center;
+     justify-self: center;
+ }
+
+ .title-home-button {
+     font-weight: 300;
+     background-color: #F1F1FF;
+     padding: 4px 8px;
+     border-radius: 4px;
+     cursor: pointer;
+     transition: all 200ms cubic-bezier(0.34, 0.80, 0.34, 1.00);
+ }
+
+ .title-home-button:hover {
+     background-color: #e4e4ff;
+ }
+
+ .content-block {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 0px 140px;
+     gap: 16px
+ }
+
+ .text-content {
+     display: flex;
+     flex-direction: column;
+     padding: 48px 0px;
+     max-width: 680px;
+     gap: 8px;
+ }
+
+ .body-paragraph,
+ .overline {
+     font-family: "albert-sans", sans-serif;
+     text-align: left;
+     color: #333;
+     margin: 0;
+ }
+
+ .overline {
+     font-size: 12px;
+ }
+
+ .body-paragraph {
+     font-size: 20px;
+     line-height: 140%;
+ }
+
+ /* ==========================================
+           MODULAR MEDIA ASSET SYSTEM
+           ========================================== */
+
+ /* Base media container - works for both images and videos */
+ .media-container {
+     width: 100%;
+     height: 0;
+     position: relative;
+     overflow: hidden;
+     border-radius: 28px;
+     background: #f0f0f0;
+     /* Fallback color while loading */
+ }
+
+ /* Media elements (both img and video) */
+ .media-container img,
+ .media-container video {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     display: block;
+ }
+
+ /* Aspect ratio classes */
+ .aspect-1x1 {
+     padding-bottom: 100%;
+     /* 1:1 */
+ }
+
+ .aspect-2x1 {
+     padding-bottom: 50%;
+     /* 2:1 */
+ }
+
+ .aspect-16x9 {
+     padding-bottom: 56.25%;
+     /* 16:9 */
+ }
+
+ .aspect-9x16 {
+     padding-bottom: 177.78%;
+     /* 9:16 (portrait) */
+ }
+
+ .aspect-4x3 {
+     padding-bottom: 75%;
+     /* 4:3 */
+ }
+
+ .aspect-4x5 {
+     padding-bottom: 125%;
+     /* 4:5 (portrait) */
+ }
+
+ /* Layout utilities */
+ .image-content {
+     display: flex;
+     flex-direction: column;
+     gap: 16px;
+     width: 100%;
+ }
+
+ .image-row {
+     display: flex;
+     width: 100%;
+     gap: 16px;
+     align-items: stretch;
+ }
+
+ /* Flex sizing for row items based on aspect ratios */
+ .flex-1 {
+     flex: 1;
+ }
+
+ .flex-1-33 {
+     flex: 1.33;
+ }
+
+ /* You can add more flex ratios as needed */
+ .flex-1-5 {
+     flex: 1.5;
+ }
+
+ .flex-2 {
+     flex: 2;
+ }
+
+ .flex-3 {
+     flex: 3;
+ }
+
+ .flex-4 {
+     flex: 4;
+ }
+
+ .flex-5 {
+     flex: 5;
+ }
+
+ .flex-6 {
+     flex: 6;
+ }
+
+ .flex-7 {
+     flex: 7;
+ }
+
+ .flex-8 {
+     flex: 8;
+ }
+
+ .flex-9 {
+     flex: 9;
+ }
+
+ .flex-10 {
+     flex: 10;
+ }
+
+ .flex-12 {
+     flex: 12;
+ }
+
+ .flex-15 {
+     flex: 15;
+ }
+
+ .flex-16 {
+     flex: 16;
+ }
+
+ .flex-18 {
+     flex: 18;
+ }
+
+
+ .flex-20 {
+     flex: 20;
+ }
+
+ .flex-27 {
+     flex: 27;
+ }
+
+ .flex-32 {
+     flex: 32;
+ }
+
+ .flex-36 {
+     flex: 36;
+ }
+
+ /* Exact values for all combinations */
+ .flex-11 {
+     flex: 11;
+ }
+
+ .flex-13 {
+     flex: 13;
+ }
+
+ .flex-14 {
+     flex: 14;
+ }
+
+ .flex-17 {
+     flex: 17;
+ }
+
+ .flex-19 {
+     flex: 19;
+ }
+
+ .flex-21 {
+     flex: 21;
+ }
+
+ .flex-22 {
+     flex: 22;
+ }
+
+ .flex-23 {
+     flex: 23;
+ }
+
+ .flex-24 {
+     flex: 24;
+ }
+
+ .flex-25 {
+     flex: 25;
+ }
+
+ .flex-26 {
+     flex: 26;
+ }
+
+ .flex-28 {
+     flex: 28;
+ }
+
+ .flex-29 {
+     flex: 29;
+ }
+
+ .flex-30 {
+     flex: 30;
+ }
+
+ .flex-31 {
+     flex: 31;
+ }
+
+ .flex-33 {
+     flex: 33;
+ }
+
+ .flex-34 {
+     flex: 34;
+ }
+
+ .flex-35 {
+     flex: 35;
+ }
+
+ .flex-37 {
+     flex: 37;
+ }
+
+ .flex-38 {
+     flex: 38;
+ }
+
+ .flex-39 {
+     flex: 39;
+ }
+
+ .flex-40 {
+     flex: 40;
+ }
+
+ .flex-41 {
+     flex: 41;
+ }
+
+ .flex-42 {
+     flex: 42;
+ }
+
+ .flex-43 {
+     flex: 43;
+ }
+
+ .flex-44 {
+     flex: 44;
+ }
+
+ .flex-45 {
+     flex: 45;
+ }
+
+ .flex-48 {
+     flex: 48;
+ }
+
+ .flex-50 {
+     flex: 50;
+ }
+
+ .flex-54 {
+     flex: 54;
+ }
+
+ .flex-64 {
+     flex: 64;
+ }
+
+ .flex-80 {
+     flex: 80;
+ }
+
+ .flex-81 {
+     flex: 81;
+ }
+
+ .flex-256 {
+     flex: 256;
+ }
+
+
+ .flex-25 {
+     flex: 25;
+ }
+
+ .flex-79 {
+     flex: 79;
+ }
+
+ /* Optional: Smaller border radius variant */
+ .media-container.small-radius {
+     border-radius: 16px;
+ }
+
+ /* Optional: No border radius */
+ .media-container.no-radius {
+     border-radius: 0;
+ }
