@@ -19,6 +19,18 @@
      --secondary-font-family: "Albert sans", sans-serif;
  }
 
+ /* Page sections for combined layout */
+ .page-section {
+     min-height: 100vh;
+     width: 100%;
+     position: relative;
+ }
+
+ /* Smooth scrolling */
+ html {
+     scroll-behavior: smooth;
+ }
+
  body {
      margin: 0;
      padding: 0;

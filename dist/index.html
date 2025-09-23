@@ -1,210 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../src/styles.css">
+    <title>Portfolio</title>
     <!-- Albert Sans from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Adobe fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/atg4tkh.css">
-    <title>Portfolio</title>
 </head>
-
 <body>
-    <h3 class="page-title-container">
-        <span class="title-home-button">
-            Home/</span>
-        <span class="page-title">Building a bridge with design kit</span>
-    </h3>
 
-    <!-- Section 1: TLDR -->
-    <section class="content-block">
-        <!-- Text content -->
-        <div class="text-content">
-            <p class="overline">Overview</p>
-            <p class="body-paragraph">
-                Communicating Material Design Production Team’s value at Google through storytelling and Figma
-                prototyping.
-            </p>
+    <!-- ===== SECTION FROM: 01-Header.html ===== -->
+    <section id="header" class="page-section">
+<!-- Hero image -->
+    <div class="hero-image-container">
+        <img class="hero-image"
+            src="https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/global-assets%2Fhero-illustration.png?alt=media&token=7370a1f9-57b3-4d8d-b65b-b6bc80890c7d">
+    </div>
+    <div class="page-wrapper">
+
+        <!-- Header -->
+        <div class="hero-text-container">
+            <h3 class="hero-headline">Hi! My name is <span class="highlight">Arthur Vergani</span>.<br>I bring people
+                together through thoughtful digital experiences.</h3>
+            <div class="paragraph-container">
+                <p class="hero-paragraph">As a multidisciplinary* designer, I&nbsp;help eliminate the
+                    bottlenecks that slow teams down - handling everything from prototyping to motion graphics to basic
+                    front-end implementation - so small teams can punch above their weight.</p>
+                <p class="hero-description">*
+                    <span class="discipline-tag">Storytelling</span>
+                    <span class="discipline-tag">Product Design</span>
+                    <span class="discipline-tag">Motion Design</span>
+                    <span class="discipline-tag">Motion Design</span>
+                    <span class="discipline-tag">Illustration</span>
+                    <span class="discipline-tag">Front-end</span>
+                    <span class="discipline-tag">Prototyping</span>
+                    <span class="discipline-tag">3D Modeling</span>
+                </p>
+            </div>
         </div>
 
-        <!-- Visual content -->
-        <div class="image-content">
-            <!-- 2:1 video -->
-            <div class="media-container aspect-2x1">
-                <video autoplay muted loop playsinline disablepictureinpicture>
-                    <source
-                        src="https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/building-a-bridge-with-design-kit%2F01-Building-a-bridge-with-design-kit--2x1_1.mp4?alt=media&token=cbb8fe96-d3bd-4584-a833-673eec5fd6d0"
-                        type="video/mp4">
-                </video>
+        <!-- Experience -->
+        <div class="section-container">
+            <h4 class="section-title">Experience</h4>
+            <div class="paragraph-container">
+                <p class="hero-paragraph">I’m currently an associate lecturer at the <a
+                        href="https://www.aru.ac.uk/study/postgraduate/childrens-book-illustration" target="_blank"><span
+                            class="highlight">Cambridge School of Arts</span></a>, product Designer at <a
+                        href="https://m3.material.io/" target="_blank"><span class="highlight">Google</span></a> (staffed
+                    by WTBR) and a freelance visDev with <a href="https://meister.tv/" target="_blank"><span
+                            class="highlight">Meister</span></a>.</p>
             </div>
+        </div>
 
-            <!-- Row with 1:1 video and 4:3 image -->
+        <!-- Work header -->
+         <div class="section-container">
+             <h4 class="section-title">Work</h4>
+         </div>
+    </div>
+    </section>
+    <!-- ===== END SECTION: 01-Header.html ===== -->
+
+    <!-- ===== SECTION FROM: 02-When-90s-aesthetics-meets-mayhem.html ===== -->
+    <section id="when-90s-aesthetics-meets-mayhem" class="page-section">
+<div class="project-wrapper">
+        <div class="project-title-sticky">
+            <h5><span class="secondary-highlight">Meister/</span> When 90s aesthetics meets mayhem</h5>
+            <p class="hero-description">
+                <span class="discipline-tag">Storytelling</span>
+                <span class="discipline-tag">Product Design</span>
+                <span class="discipline-tag">Motion Design</span>
+                <span class="discipline-tag">Motion Design</span>
+                <span class="discipline-tag">Illustration</span>
+                <span class="discipline-tag">Front-end</span>
+                <span class="discipline-tag">Prototyping</span>
+                <span class="discipline-tag">3D Modeling</span>
+            </p>
+            <button class="see-more-button">Wishlist on Steam</button>
+        </div>
+        <div class="project-content">
+            <!-- Description -->
+            <div class="project-description">
+                <p class="description-paragraph">
+                    Ctrl+Alt+Destroy reimagines the y2k fear as a fighting game, now available to wishlist on Steam.
+                    Working with Portland-based Meister studio on their first fully fledged game, I helped shape every
+                    design touchpoint across multi-year development, discovering what it truly means to be a
+                    multidisciplinary designer.
+                </p>
+                <p class="description-paragraph">
+                    The challenge wasn't just honouring late '90s aesthetics, it was reimagining that era's visual
+                    language without making it pure nostalgia. All the while keeping development moving within a small
+                    studio's constraints. As design lead under CJ's creative direction, I jumped between Figma component
+                    libraries, UI specifications, visual development, and even web design in Webflow. But more
+                    importantly, I had the opportunity to be part of design discussions which allowed product decisions
+                    to inform visual concepts and vice versa.
+                </p>
+                <p class="description-paragraph">
+                    My approach to design meant rapid iteration across different development needs. When developer
+                    Harrison D. needed UI assets, I delivered them. When the team needed user journeys mapped, I mapped
+                    them. When marketing asked for a new website, I built it. When mechanics needed visual solutions, we
+                    explored them together. The result? Positive reception at Steam Next Fest and proof that small teams
+                    with the right approach can create something genuinely exciting.
+                </p>
+            </div>
+            <!-- Images -->
+            <!-- 02 Row -->
             <div class="image-row">
-                <div class="flex-1">
+                <div class="flex-4">
+                    <div class="media-container aspect-4x5">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/ctrl-alt-destroy%2F02-A-Ctrl-Alt-Destroy--4x5.png?alt=media&token=c41e63cf-f90c-43d7-bf4c-ff48302f8f01"
+                            alt="Building a Bridge Components">
+                    </div>
+                </div>
+                <div class="flex-10">
+                    <div class="media-container aspect-2x1">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/ctrl-alt-destroy%2F02-B-Ctrl-Alt-Destroy--2x1.png?alt=media&token=0980bf36-b01e-47e4-982a-68e57d330b5e"
+                            alt="Building a Bridge Components">
+                    </div>
+                </div>
+            </div>
+            <!-- 03 Row -->
+            <div class="image-row">
+                <div class="flex-9">
                     <div class="media-container aspect-1x1">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/ctrl-alt-destroy%2F03-A-Ctrl-Alt-Destroy--1x1.png?alt=media&token=71eaf62e-8b14-478c-a684-eb1c6c3db07d"
+                            alt="Building a Bridge Components">
+                    </div>
+                </div>
+                <div class="flex-16">
+                    <div class="media-container aspect-16x9">
                         <video autoplay muted loop playsinline disablepictureinpicture>
                             <source
-                                src="https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/building-a-bridge-with-design-kit%2F02-Building-a-bridge-with-design-kit--1x1.mp4?alt=media&token=1967009a-5f35-4567-96d2-d9efe5b1be6f"
+                                src="https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/ctrl-alt-destroy%2F03-B-Ctrl-Alt-Destroy--16x9.mp4?alt=media&token=41c25393-9799-4ac9-88af-a97eb68dcb01"
                                 type="video/mp4">
                         </video>
                     </div>
                 </div>
-                <div class="flex-1-33">
+            </div>
+            <!-- 04 Row -->
+            <div class="image-row">
+                <div class="flex-3">
+                    <div class="media-container aspect-2x1">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/ctrl-alt-destroy%2F04-A-Ctrl-Alt-Destroy--2x1.png?alt=media&token=5764c818-f568-493a-bb68-b221f7def616"
+                            alt="Building a Bridge Components">
+                    </div>
+                </div>
+                <div class="flex-2">
                     <div class="media-container aspect-4x3">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/building-a-bridge-with-design-kit%2F03-Building-a-Bridge-Components--4x3.png?alt=media&token=cbc7b5f8-c45d-40e4-8e85-dffdb9701fab"
+                        <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/ctrl-alt-destroy%2F04-B-Ctrl-Alt-Destroy.png?alt=media&token=4d1fce33-e6de-4774-8d0f-2a248054579b"
                             alt="Building a Bridge Components">
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Section 2: Summary -->
-    <section class="content-block">
-        <!-- Text content -->
-        <div class="text-content">
-            <p class="overline">Summary</p>
-            <p class="body-paragraph">
-                Following major Design Kit updates in 2022, team lead Euphrates Dahout identified a need to clarify our
-                team's role within Google’s UX community. We created an engaging story-driven prototype to demonstrate
-                why teams should adopt our Design Kit with confidence.
-            </p>
-        </div>
-
-        <!-- Visual content -->
-        <div class="image-content">
-            <!-- Reusing the same media with the new class system -->
-            <div class="media-container aspect-2x1">
-                <img
-                    src="https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/global-assets%2Fdevelopment-place-holder-image-2-1.png?alt=media&token=0a9bb7e5-fdcf-400e-ba2d-80733a5e95c6">
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 3: Context -->
-    <section class="content-block">
-        <!-- Text content -->
-        <div class="text-content">
-            <p class="overline">Context</p>
-            <p class="body-paragraph">
-                After ADS 2022 (Android Developer Summit), we wanted to share our recent work and findings with the
-                broader team in a memorable way.
-            </p>
-        </div>
-
-        <!-- Visual content -->
-        <div class="image-content">
-            <!-- Reusing the same media with the new class system -->
-            <div class="media-container aspect-2x1">
-                <img
-                    src="https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/global-assets%2Fdevelopment-place-holder-image-2-1.png?alt=media&token=0a9bb7e5-fdcf-400e-ba2d-80733a5e95c6">
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 4: Problem -->
-    <section class="content-block">
-        <!-- Text content -->
-        <div class="text-content">
-            <p class="overline">Problem</p>
-            <p class="body-paragraph">
-                How do you communicate the importance of maintaining a Design Kit at Google scale? We structured our
-                message around Why (why it matters), How (how it works), and What (what it is), using interactive Figma
-                prototyping to create a “choose your own adventure” experience for Google's design community.
-            </p>
-        </div>
-
-        <!-- Visual content -->
-        <div class="image-content">
-            <!-- Reusing the same media with the new class system -->
-            <div class="media-container aspect-2x1">
-                <img
-                    src="https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/global-assets%2Fdevelopment-place-holder-image-2-1.png?alt=media&token=0a9bb7e5-fdcf-400e-ba2d-80733a5e95c6">
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 5: My Role -->
-    <section class="content-block">
-        <!-- Text content -->
-        <div class="text-content">
-            <p class="overline">My Role</p>
-            <p class="body-paragraph">
-                I proposed the solution and crafted the core message. Using storytelling expertise, I developed an
-                analogy that explains what makes our Design Kit essential. I created the visual language and storyboard,
-                which, together with Ronnie Montoya, we crafted into a prototype and distributed company-wide, then
-                shared on Google’s Figma Community page.
-            </p>
-        </div>
-
-       <!-- Visual content -->
-        <div class="image-content">
-            <!-- Row with 2x 16x9 static -->
+            <!-- 05 Row -->
             <div class="image-row">
-                <div class="flex-1">
-                    <div class="media-container aspect-16x9">
-                       <div class="media-container aspect-16x9">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/building-a-bridge-with-design-kit%2F05-A-Building-a-Bridge--16x9.png?alt=media&token=e4532fbd-cf9d-45ed-9ac6-7fa7de71bcab"
+                <div class="flex-4">
+                    <div class="media-container aspect-4x3">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/ctrl-alt-destroy%2F05-A-Ctrl-Alt-Destroy--4x3.png?alt=media&token=499065d0-6618-422f-88d0-4f6fdf77ec55"
                             alt="Building a Bridge Components">
                     </div>
-                    </div>
                 </div>
-                <div class="flex-1">
-                    <div class="media-container aspect-16x9">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/building-a-bridge-with-design-kit%2F05-B-Building-a-Bridge--16x9.png?alt=media&token=2cc5b924-6502-407e-a966-4a46e68ce749"
+                <div class="flex-3">
+                    <div class="media-container aspect-1x1">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/ctrl-alt-destroy%2F05-B-Ctrl-Alt-Destroy--1x1.png?alt=media&token=915bd9a3-4534-46d7-8cb4-90f9941d0d2c"
                             alt="Building a Bridge Components">
                     </div>
                 </div>
             </div>
-             <!-- Row with 2x 16x9 static -->
+            <!-- 06 Row -->
             <div class="image-row">
-                <div class="flex-1">
-                    <div class="media-container aspect-16x9">
-                       <div class="media-container aspect-16x9">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/building-a-bridge-with-design-kit%2F05-C-Building-a-Bridge--16x9.png?alt=media&token=82748cb2-2029-4c14-aa11-98d830113655"
-                            alt="Building a Bridge Components">
-                    </div>
+                <div class="flex-25">
+                    <div class="media-container aspect-9x16">
+                        <video autoplay muted loop playsinline disablepictureinpicture>
+                            <source
+                                src="https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/ctrl-alt-destroy%2F06-A-Ctrl-Alt-Destroy--9x16.mp4?alt=media&token=9d2c91fa-6960-4bf7-862b-174f33bc7fcd"
+                                type="video/mp4">
+                        </video>
                     </div>
                 </div>
-                <div class="flex-1">
+                <div class="flex-79">
                     <div class="media-container aspect-16x9">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/building-a-bridge-with-design-kit%2F05-D-Building-a-Bridge--16x9.png?alt=media&token=ded28fbc-c3c0-4172-a4c9-351f9f7e814d"
-                            alt="Building a Bridge Components">
+                        <video autoplay muted loop playsinline disablepictureinpicture>
+                            <source
+                                src="https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/ctrl-alt-destroy%2F06-B-Ctrl-Alt-Destroy--16x9.mp4?alt=media&token=69dfe778-d45b-4887-8293-682e6c77d1b7"
+                                type="video/mp4">
+                        </video>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </section>
+    <!-- ===== END SECTION: 02-When-90s-aesthetics-meets-mayhem.html ===== -->
 
-    <!-- Section 6: Result -->
-    <section class="content-block">
-        <!-- Text content -->
-        <div class="text-content">
-            <p class="overline">Result</p>
-            <p class="body-paragraph">
-                The prototype successfully positioned the Production Team as the bridge between Material Design and
-                internal designers. We received positive feedback from multiple teams, saw increased Design Kit
-                adoption, and reinforced confidence in adopting our tools through our demonstrated expertise.
-            </p>
-        </div>
-
-        <!-- Visual content -->
-        <div class="image-content">
-            <!-- Reusing the same media with the new class system -->
-            <div class="media-container aspect-2x1">
-                <img
-                    src="https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/global-assets%2Fdevelopment-place-holder-image-2-1.png?alt=media&token=0a9bb7e5-fdcf-400e-ba2d-80733a5e95c6">
-            </div>
-        </div>
-    </section>
-
-
+    <!-- Build script: Add your JavaScript here -->
+    <script src="../src/scripts.js"></script>
 </body>
-
 </html>

@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-builder",
+  "version": "1.0.0",
+  "description": "Portfolio build script",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js --watch"
+  },
+  "keywords": ["portfolio", "static-site"],
+  "author": "Your Name",
+  "license": "ISC"
+}
