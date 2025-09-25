@@ -33,6 +33,7 @@ h3 {
 }
 
 h4 {
+    margin: 0;
     font-weight: 400;
     font-size: var(--text-2xl);
     line-height: 125%;
@@ -114,6 +115,7 @@ button {
 
 .section-container {
     display: flex;
+    align-items: flex-start;
     padding: var(--container-padding);
     gap: var(--spacing-lg);
     margin: 0 auto;
@@ -168,7 +170,7 @@ a.see-more-button {
     display: flex;
     flex-direction: column;
     flex: 3;
-    padding: var(--spacing-xxl) var(--spacing-xxxl);
+    padding: var(--spacing-xxl) 0;
     gap: var(--content-gap);
 }
 

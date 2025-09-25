@@ -35,7 +35,7 @@
     
     /* Border radius scale */
     --radius-sm: var(--space-1);      /* 0.25rem - small radius */
-    --radius-md: var(--space-7);      /* 1.75rem - medium radius */
+    --radius-md: var(--space-4);
     --radius-full: 12.5rem;           /* Full radius for pills/buttons */
     
     /* Component-specific spacing */
