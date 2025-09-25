@@ -50,6 +50,86 @@ button {
     border: none;
 }
 
+
+/* Nav bar */
+.nav-bar {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    left: 50%;
+    justify-content: start;
+    transform: translateX(-50%);
+    padding: var(--spacing-md);
+    bottom: 0;
+    flex-direction: row;
+    transform: translateX(-50%);
+    gap: var(--spacing-sm);
+    z-index: 10;
+}
+
+.email-container {
+    font-family: var(--secondary-font-family);
+    line-height: 140%;
+    padding: var(--button-padding);
+    border-radius: var(--radius-full);
+    background-color: var(--primary-colour);
+    color: var(--on-negatve-surface-container);
+    width: fit-content;
+    font-size: var(--text-base);
+}
+
+.menu-button {
+    font-family: var(--secondary-font-family);
+    line-height: 140%;
+    padding: var(--button-padding);
+    border-radius: var(--radius-full);
+    background-color: var(--surface);
+    color: var(--primary-colour);
+    width: fit-content;
+    border: 1px solid var(--secondary-colour);
+    font-size: var(--text-base);
+}
+
+.scrim {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--on-surface);
+    opacity: 0.4;
+    z-index: 9;
+}
+
+.menu-image-container {
+    background-image: -moz-linear-gradient();
+}
+
+.menu-project-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    left: var(--spacing-md);
+    bottom: calc(var(--spacing-md) * 2 + var(--text-base) * 1.4 + var(--spacing-sm));
+    background-color: var(--surface);
+    z-index: 10;
+    gap: var(--spacing-sm);
+    cursor: pointer;
+}
+
+.menu-project-list-item {
+    font-family: var(--primary-font-family);
+    font-size: var(--text-lg);
+    line-height: 100%;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-full);
+    transition: 300ms cubic-bezier(0.2, 0.0, 0, 1.0);
+}
+
+.menu-project-list-item:hover {
+    background-color: var(--surface-hover);
+}
+
 /* New header css */
 
 .page-wrapper {
@@ -164,7 +244,7 @@ a.see-more-button {
     color: var(--on-negatve-surface-container);
     width: fit-content;
     cursor: pointer;
-    transition: 300ms cubic-bezier(0.2, 0.0, 0, 1.0); 
+    transition: 300ms cubic-bezier(0.2, 0.0, 0, 1.0);
 }
 
 a.see-more-button:hover {
@@ -589,7 +669,7 @@ a.see-more-button:hover {
     .hero-paragraph {
         font-size: var(--text-base);
     }
-    
+
     /* Project wrapper - stack title and content */
     .project-wrapper {
         flex-direction: column;
@@ -660,9 +740,10 @@ a.see-more-button:hover {
 @media (max-width: 600px) {
     /* Mobile gets full stacking behavior */
 
-h5 {
-    font-size: var(--text-3xl);
-}
+    h5 {
+        font-size: var(--text-3xl);
+    }
+
     /* Hero section - stack headline and paragraph */
     .hero-text-container {
         flex-direction: column;
