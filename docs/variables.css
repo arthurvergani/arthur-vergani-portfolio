@@ -56,7 +56,11 @@
     --on-surface-variant: #646464;
     --surface-container: #E4ECF7;
     --negative-surface-container: #141414;
+    --negative-surface-container-hover: #3C3C3C;
     --on-negatve-surface-container: #E4ECF7;
+    --on-negatve-surface-container-hover: #9AC2FF;
+
+    
 
     /* ========================================
        TYPOGRAPHY SYSTEM

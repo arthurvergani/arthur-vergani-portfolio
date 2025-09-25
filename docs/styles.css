@@ -164,6 +164,12 @@ a.see-more-button {
     color: var(--on-negatve-surface-container);
     width: fit-content;
     cursor: pointer;
+    transition: 300ms cubic-bezier(0.2, 0.0, 0, 1.0); 
+}
+
+a.see-more-button:hover {
+    background-color: var(--negative-surface-container-hover);
+
 }
 
 .project-content {
@@ -583,10 +589,14 @@ a.see-more-button {
 @media (max-width: 479px) {
     /* Mobile gets full stacking behavior */
 
+h5 {
+    font-size: var(--text-3xl);
+}
     /* Hero section - stack headline and paragraph */
     .hero-text-container {
         flex-direction: column;
         gap: var(--spacing-md);
+        padding: var(--spacing-lg);
     }
 
     .hero-headline {
@@ -600,7 +610,8 @@ a.see-more-button {
     /* Section containers - stack title and content */
     .section-container {
         flex-direction: column;
-        gap: var(--spacing-sm);
+        gap: var(--spacing-md);
+        padding: var(--spacing-lg);
     }
 
     .section-title {
@@ -611,6 +622,7 @@ a.see-more-button {
     .project-wrapper {
         flex-direction: column;
         gap: var(--spacing-lg);
+        padding: var(--spacing-lg);
     }
 
     .project-title-sticky {
@@ -622,18 +634,19 @@ a.see-more-button {
     .project-content {
         flex: none;
         padding: 0;
+        gap: var(--spacing-md);
     }
 
     /* Project description - stack on mobile */
     .project-description {
         flex-direction: column;
-        gap: var(--spacing-sm);
+        gap: var(--spacing-md);
     }
 
     /* Image rows - stack on mobile */
     .image-row {
         flex-direction: column;
-        gap: var(--spacing-xs);
+        gap: var(--spacing-md);
         flex-wrap: nowrap;
     }
 
