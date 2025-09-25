@@ -122,7 +122,7 @@ ${templateHead}
 <body>
 ${sectionsHTML}
     <!-- Build script: Add your JavaScript here -->
-    <script src="../src/scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>`;
 
