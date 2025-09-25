@@ -93,8 +93,8 @@
     }
 }
 
-/* Mobile: 479px and down */
-@media (max-width: 479px) {
+/* Mobile: 600px and down */
+@media (max-width: 600px) {
     :root {
         --container-padding: var(--spacing-sm);  /* Even smaller padding */
         --section-gap: var(--spacing-md);        /* Even smaller gaps */

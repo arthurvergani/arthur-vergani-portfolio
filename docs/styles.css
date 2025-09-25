@@ -558,7 +558,7 @@ a.see-more-button:hover {
    RESPONSIVE BREAKPOINTS
    ======================================== */
 
-/* Tablet: 991px and down */
+/* ======== Tablet: 991px and down ======= */
 @media (max-width: 991px) {
     /* Keep all layouts as rows on tablet - just adjust spacing and sizing */
 
@@ -585,8 +585,79 @@ a.see-more-button:hover {
     }
 }
 
-/* Mobile: 479px and down */
-@media (max-width: 479px) {
+@media (max-width: 834px) {
+    .hero-paragraph {
+        font-size: var(--text-base);
+    }
+    
+    /* Project wrapper - stack title and content */
+    .project-wrapper {
+        flex-direction: column;
+        gap: var(--spacing-lg);
+        padding: var(--spacing-md);
+    }
+
+    .project-title-sticky {
+        position: relative;
+        flex: none;
+        padding: 0 0 var(--spacing-lg) 0;
+    }
+
+    .project-content {
+        flex: none;
+        padding: 0;
+        gap: var(--spacing-md);
+    }
+
+    /* Project description - stack on mobile */
+    .project-description {
+        gap: var(--spacing-md);
+    }
+
+    /* Image rows - stack on mobile */
+    .image-row {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        flex-wrap: nowrap;
+    }
+
+    /* Reset flex values for image containers to fill width */
+    .image-row>* {
+        flex: none;
+        width: 100%;
+    }
+
+    /* Page wrapper adjustments */
+    .page-wrapper {
+        gap: var(--spacing-md);
+    }
+
+    /* Content block adjustments */
+    .content-block {
+        padding: 0 var(--spacing-sm);
+    }
+
+    /* Discipline tags - smaller on mobile */
+    .discipline-tag {
+        font-size: var(--text-xs);
+        padding: calc(var(--spacing-xs) * 0.5) var(--spacing-xs);
+    }
+
+    /* Button adjustments */
+    .see-more-button {
+        font-size: var(--text-sm);
+        padding: var(--spacing-sm) var(--spacing-lg);
+    }
+
+    /* Typography adjustments for mobile */
+    .project-title-sticky {
+        font-size: 2rem;
+        line-height: 100%;
+    }
+}
+
+/* ======== Mobile: 600px and down ======== */
+@media (max-width: 600px) {
     /* Mobile gets full stacking behavior */
 
 h5 {
@@ -674,7 +745,7 @@ h5 {
 
     /* Button adjustments */
     .see-more-button {
-        font-size: var(--text-base);
+        font-size: var(--text-sm);
         padding: var(--spacing-sm) var(--spacing-lg);
     }
 
