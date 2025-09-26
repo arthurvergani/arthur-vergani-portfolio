@@ -94,12 +94,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Define images for each menu item
     const menuImages = {
-        0: 'https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/ctrl-alt-destroy%2F02-A-Ctrl-Alt-Destroy--4x5.webp?alt=media&token=808c09d3-6080-4686-a6d5-a2d2639dc133', // Meister
-        1: 'https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/google-design-editorial%2F01-B-UX-dance-reference-desktop--1x1.webp?alt=media&token=824e6629-1e82-47c6-95b1-22533481fb5a', // Google editorial
-        2: 'https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/The%C2%A0music%20learning%20tool%20I%C2%A0couldn-t%20find%2F02-B-Acorde--4x3.webp?alt=media&token=5a9f7684-debc-436e-9ad0-9091e89a6d76', // Music tool
-        3: 'https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/building-a-bridge-with-design-kit%2F02-B-Building-a-Bridge-Components--4x3.webp?alt=media&token=2c6cefeb-e3be-4340-930a-f5f8d678e577', // Design Kit
-        4: 'https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/Telegraph-illustration-system%2F04-B-Telegraph--16x9.webp?alt=media&token=ebead134-0606-47b4-a14f-382c8b945d0a', // Telegraph
-        5: 'https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/Telegraph-illustration-system%2F03-Telegraph--2x1.webp?alt=media&token=7a71b6c0-9e7c-463f-a4ee-6b75ce692482' // Teaching
+        0: 'https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/global-assets%2F01-Thumbnail--Ctrl-alt.webp?alt=media&token=618d0cff-68a5-4252-9f8d-d9b9a7a5efa9', // Meister
+        1: 'https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/global-assets%2F02-Thumbnail--Google-Design.webp?alt=media&token=4cbe4a5b-537e-4d63-add3-6d0ec7e43689', // Google editorial
+        2: 'https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/global-assets%2F03-Thumbnail--Acorde.webp?alt=media&token=e8652b8b-e566-4cd5-8d10-3b1e5568e28c', // Music tool
+        3: 'https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/global-assets%2F04-Thumbnail--Building-a-bridge.webp?alt=media&token=63c157d3-926a-40cd-b397-6565765bcfe7', // Design Kit
+        4: 'https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/global-assets%2F05-Thumbnail--Telegraph.webp?alt=media&token=0c843936-f8a8-4514-bcc2-85c40cd790f6', // Telegraph
+        5: 'https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/global-assets%2F06-Thumbnail--Gif-workshop.webp?alt=media&token=f31b0ac1-7338-4d4d-a4db-4c9460478e17' // Teaching
     };
     
     // Define section IDs for each menu item
