@@ -76,6 +76,8 @@ button {
     color: var(--on-negatve-surface-container);
     width: fit-content;
     font-size: var(--text-base);
+    text-decoration: none !important;
+    -webkit-text-decoration: none !important;
 }
 
 .menu-button {
@@ -757,6 +759,25 @@ a.see-more-button:hover {
 /* ======== Mobile: 600px and down ======== */
 @media (max-width: 600px) {
     /* Mobile gets full stacking behavior */
+
+    .nav-bar {
+        justify-content: center;
+    }
+
+    .website-menu-container {
+        right: var(--spacing-md);
+    }
+
+    .menu-project-container {
+        padding: var(--);
+        padding: var(--spacing-md);
+    }
+
+    .menu-project-list-item {
+        font-size: var(--text-base);
+        line-height: 140%;
+    }
+
 
     h5 {
         font-size: var(--text-3xl);
