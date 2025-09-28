@@ -261,3 +261,40 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize the menu to closed state when page loads
     initializeMenu();
 });
+
+// =====================================
+// Rive Animation - Happy Fella
+// =====================================
+
+document.addEventListener('DOMContentLoaded', function() {
+    const riveCanvas = document.getElementById('rive-canvas');
+    
+    if (riveCanvas && typeof rive !== 'undefined') {
+        try {
+            const riveInstance = new rive.Rive({
+                src: 'happy_fella.riv', // Update path if needed
+                canvas: riveCanvas,
+                autoplay: true,
+                stateMachines: 'State Machine 1',
+                fit: rive.Fit.CONTAIN,
+                alignment: rive.Alignment.CENTER,
+                onLoad: () => {
+                    riveInstance.resizeDrawingSurfaceToCanvas();
+                    console.log('Happy Fella animation loaded');
+                },
+                onLoadError: (error) => {
+                    console.error('Failed to load Happy Fella:', error);
+                }
+            });
+            
+            // Keep animation crisp on resize
+            window.addEventListener('resize', () => {
+                if (riveInstance) {
+                    riveInstance.resizeDrawingSurfaceToCanvas();
+                }
+            });
+        } catch (error) {
+            console.error('Error initializing Rive:', error);
+        }
+    }
+});
