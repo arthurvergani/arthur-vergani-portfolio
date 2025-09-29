@@ -121,7 +121,7 @@ ${templateHead}
 </head>
 <body>
 <div class="flier">
-<canvas id="rive-canvas" width="200" height="200"></canvas>
+<canvas id="rive-canvas" width="300" height="300"></canvas>
 </div>
 ${sectionsHTML}
     <!-- Build script: Add your JavaScript here -->
