@@ -266,35 +266,49 @@ document.addEventListener('DOMContentLoaded', function() {
 // Rive Animation - Happy Fella
 // =====================================
 
+ // =====================================
+// Rive Animation - Happy Fella
+// =====================================
+
 document.addEventListener('DOMContentLoaded', function() {
-    const riveCanvas = document.getElementById('rive-canvas');
+    const canvas = document.getElementById('rive-canvas');
     
-    if (riveCanvas && typeof rive !== 'undefined') {
-        try {
-            const riveInstance = new rive.Rive({
-                src: 'happy_fella.riv', // Update path if needed
-                canvas: riveCanvas,
-                autoplay: true,
-                stateMachines: 'State Machine 1',
-                fit: rive.Fit.CONTAIN,
-                alignment: rive.Alignment.CENTER,
-                onLoad: () => {
-                    riveInstance.resizeDrawingSurfaceToCanvas();
-                    console.log('Happy Fella animation loaded');
-                },
-                onLoadError: (error) => {
-                    console.error('Failed to load Happy Fella:', error);
-                }
-            });
-            
-            // Keep animation crisp on resize
-            window.addEventListener('resize', () => {
-                if (riveInstance) {
-                    riveInstance.resizeDrawingSurfaceToCanvas();
-                }
-            });
-        } catch (error) {
-            console.error('Error initializing Rive:', error);
-        }
+    if (!canvas) {
+        console.error('Canvas element not found');
+        return;
+    }
+    
+    // Check if Rive library loaded
+    if (typeof rive === 'undefined') {
+        console.error('Rive library not loaded');
+        return;
+    }
+    
+    console.log('Initializing Rive animation...');
+    
+    try {
+        const riveInstance = new rive.Rive({
+            src: 'happy_fella.riv', // Make sure this file is in the same directory as your HTML
+            canvas: canvas,
+            autoplay: true,
+            stateMachines: 'State Machine 1',
+            fit: rive.Fit.Contain,
+            alignment: rive.Alignment.Center,
+            onLoad: () => {
+                console.log('Rive animation loaded successfully!');
+                riveInstance.resizeDrawingSurfaceToCanvas();
+            },
+            onLoadError: (error) => {
+                console.error('Failed to load Rive animation:', error);
+            }
+        });
+        
+        // Handle window resize to keep animation crisp
+        window.addEventListener('resize', () => {
+            riveInstance.resizeDrawingSurfaceToCanvas();
+        });
+        
+    } catch (error) {
+        console.error('Error creating Rive instance:', error);
     }
 });

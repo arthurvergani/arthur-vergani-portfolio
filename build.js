@@ -121,10 +121,11 @@ ${templateHead}
 </head>
 <body>
 <div class="flier">
-<img src="https://firebasestorage.googleapis.com/v0/b/portfolio-video-assets.firebasestorage.app/o/global-assets%2Fhappy-fella-floating.gif?alt=media&token=947c9518-d121-478c-b49e-c02682dc5f05">
+<canvas id="rive-canvas" width="200" height="200"></canvas>
 </div>
 ${sectionsHTML}
     <!-- Build script: Add your JavaScript here -->
+    <script src="https://unpkg.com/@rive-app/canvas@2.24.0"></script>
     <script src="scripts.js"></script>
 </body>
 </html>`;
