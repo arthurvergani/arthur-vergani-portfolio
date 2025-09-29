@@ -266,10 +266,6 @@ document.addEventListener('DOMContentLoaded', function() {
 // Rive Animation - Happy Fella
 // =====================================
 
- // =====================================
-// Rive Animation - Happy Fella
-// =====================================
-
 document.addEventListener('DOMContentLoaded', function() {
     const canvas = document.getElementById('rive-canvas');
     
@@ -288,7 +284,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     try {
         const riveInstance = new rive.Rive({
-            src: 'happy_fella.riv', // Make sure this file is in the same directory as your HTML
+            src: 'happy_fella.riv',
             canvas: canvas,
             autoplay: true,
             stateMachines: 'State Machine 1',
@@ -296,17 +292,14 @@ document.addEventListener('DOMContentLoaded', function() {
             alignment: rive.Alignment.Center,
             onLoad: () => {
                 console.log('Rive animation loaded successfully!');
-                riveInstance.resizeDrawingSurfaceToCanvas();
+                // Don't call resizeDrawingSurfaceToCanvas - use fixed canvas dimensions
             },
             onLoadError: (error) => {
                 console.error('Failed to load Rive animation:', error);
             }
         });
         
-        // Handle window resize to keep animation crisp
-        window.addEventListener('resize', () => {
-            riveInstance.resizeDrawingSurfaceToCanvas();
-        });
+        // Window resize listener removed - keeping canvas at fixed size
         
     } catch (error) {
         console.error('Error creating Rive instance:', error);

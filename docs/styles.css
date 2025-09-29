@@ -936,3 +936,11 @@ a.see-more-button:hover {
 		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
 	}
 }
+
+#rive-canvas {
+    width: 200px !important;
+    height: 200px !important;
+    max-width: 200px;
+    max-height: 200px;
+    display: block;
+}
