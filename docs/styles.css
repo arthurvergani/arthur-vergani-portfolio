@@ -951,10 +951,8 @@ a.see-more-button:hover {
 
 #hero-rive-canvas {
     width: 100% !important;
-    height: auto !important;
     display: block;
     aspect-ratio: 360 / 103;
-    /* Adjust this ratio to match your hero illustration */
 
 }
 
@@ -963,5 +961,4 @@ a.see-more-button:hover {
     position: sticky;
     top: 0;
     z-index: -1;
-    /* Adjust this ratio to match your hero illustration */
 }

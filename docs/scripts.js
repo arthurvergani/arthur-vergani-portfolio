@@ -326,17 +326,32 @@ document.addEventListener('DOMContentLoaded', function() {
     
     console.log('Initializing Hero Rive animation...');
     
+    // Set explicit canvas dimensions based on container
+    function updateCanvasSize() {
+        const container = heroCanvas.parentElement;
+        const width = container.offsetWidth;
+        const height = width * (103 / 360); // Based on your aspect ratio
+        
+        heroCanvas.width = width;
+        heroCanvas.height = height;
+        
+        console.log('Canvas sized to:', width, 'x', height);
+    }
+    
+    // Size the canvas before creating the Rive instance
+    updateCanvasSize();
+    
     try {
         const heroRiveInstance = new rive.Rive({
             src: 'hero-illustration.riv',
             canvas: heroCanvas,
             autoplay: true,
             stateMachines: 'State Machine 2',
-            fit: rive.Fit.Cover, // Use Cover to fill the container
+            fit: rive.Fit.Cover,
             alignment: rive.Alignment.Center,
             onLoad: () => {
                 console.log('Hero Rive animation loaded successfully!');
-                riveInstance.resizeDrawingSurfaceToCanvas();
+                heroRiveInstance.resizeDrawingSurfaceToCanvas(); // Fixed typo here
             },
             onLoadError: (error) => {
                 console.error('Failed to load Hero Rive animation:', error);
@@ -345,6 +360,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Resize on window resize
         window.addEventListener('resize', () => {
+            updateCanvasSize();
             heroRiveInstance.resizeDrawingSurfaceToCanvas();
         });
         
