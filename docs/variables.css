@@ -51,13 +51,13 @@
        ======================================== */
     --surface: #FFFFFF;
     --surface-hover: #EDF4FF;
-    --primary-colour: #0064FF;
-    --secondary-colour: #A4B0C2;
-    --on-surface: #141414;
-    --on-surface-variant: #646464;
-    --surface-container: #E4ECF7;
-    --negative-surface-container: #141414;
-    --negative-surface-container-hover: #3C3C3C;
+    --primary-colour: #CC8449;
+    --secondary-colour: #E3EAFF;
+    --on-surface: #351919;
+    --on-surface-variant: #573838;
+    --surface-container: #E3EAFF;
+    --negative-surface-container: #351919;
+    --negative-surface-container-hover: #421f1f;
     --on-negatve-surface-container: #E4ECF7;
     --on-negatve-surface-container-hover: #9AC2FF;
 

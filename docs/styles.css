@@ -73,7 +73,7 @@ button {
     padding: var(--button-padding);
     border-radius: var(--radius-full);
     background-color: var(--primary-colour);
-    color: var(--on-negatve-surface-container);
+    color: var(--surface);
     width: fit-content;
     font-size: var(--text-base);
     text-decoration: none !important;
@@ -938,9 +938,9 @@ a.see-more-button:hover {
 }
 
 #rive-canvas {
-    width: 200px !important;
-    height: 200px !important;
-    max-width: 200px;
-    max-height: 200px;
+    width: 300px !important;
+    height: 300px !important;
+    max-width: 300px;
+    max-height: 300px;
     display: block;
 }
