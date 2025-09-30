@@ -163,13 +163,6 @@ button {
     gap: var(--section-gap);
 }
 
-.hero-image-container {
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: -1;
-}
-
 .hero-image {
     width: 100%;
     height: auto;
@@ -950,4 +943,18 @@ a.see-more-button:hover {
     max-width: 300px;
     max-height: 300px;
     display: block;
+}
+
+#hero-rive-canvas {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+}
+
+.hero-image-container {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: -1;
+    aspect-ratio: 16 / 9; /* Adjust this ratio to match your hero illustration */
 }

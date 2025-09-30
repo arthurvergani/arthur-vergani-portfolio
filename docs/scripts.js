@@ -305,3 +305,50 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('Error creating Rive instance:', error);
     }
 });
+
+// =====================================
+// Rive Animation - Hero Illustration
+// =====================================
+
+document.addEventListener('DOMContentLoaded', function() {
+    const heroCanvas = document.getElementById('hero-rive-canvas');
+    
+    if (!heroCanvas) {
+        console.error('Hero canvas element not found');
+        return;
+    }
+    
+    // Check if Rive library loaded
+    if (typeof rive === 'undefined') {
+        console.error('Rive library not loaded');
+        return;
+    }
+    
+    console.log('Initializing Hero Rive animation...');
+    
+    try {
+        const heroRiveInstance = new rive.Rive({
+            src: 'hero-illustration.riv',
+            canvas: heroCanvas,
+            autoplay: true,
+            stateMachines: 'State Machine 2',
+            fit: rive.Fit.Cover, // Use Cover to fill the container
+            alignment: rive.Alignment.Center,
+            onLoad: () => {
+                console.log('Hero Rive animation loaded successfully!');
+                riveInstance.resizeDrawingSurfaceToCanvas();
+            },
+            onLoadError: (error) => {
+                console.error('Failed to load Hero Rive animation:', error);
+            }
+        });
+        
+        // Resize on window resize
+        window.addEventListener('resize', () => {
+            heroRiveInstance.resizeDrawingSurfaceToCanvas();
+        });
+        
+    } catch (error) {
+        console.error('Error creating Hero Rive instance:', error);
+    }
+});
